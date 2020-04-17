@@ -17,10 +17,12 @@ WHO的收入主要分成两部分：一部分是个人、机构、或者国家�
 原始数据可以在[WHF官网](https://www.who.int/about/finances-accountability/funding/AC_Status_Report_2020.pdf?ua=1)以PDF格式获得；我编辑和在项目中使用的arcgis的feature layer可以从这个[web host service 的 url](https://services9.arcgis.com/DYJ7DbkMVmIBPMdR/arcgis/rest/services/country_owing_WHO/FeatureServer/0) 获取。
 
 # 项目技术栈
-主要分为数据预处理和数据可是化两部分  
-1. 数据预处理  
-主要使用了arcgis 的 python SDK，读取WHO官网获取的会费欠款情况，并以properties的形式写入[从arcgis hub获取的世界地图](http://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0)的geojson中，并生成且发布Feature Layer。
-2. 数据可视化  
+主要分为数据预处理和数据可是化两部分。  
+## 1. 数据预处理  
+主要使用了arcgis 的 python SDK，读取WHO官网获取的会费欠款情况，并以properties的形式写入[从arcgis hub获取的世界地图](http://hub.arcgis.com/datasets/2b93b06dc0dc4e809d3c8db5cb96ba69_0)的geojson中，并生成且发布Feature Layer。  
+
+这一部分代码并没有包含在这个库里, 因为我打算把它单独写成一个独立工具包，用来生成这种世界地图类的arcgis feature layer。完成之后，我会在这里放个链接。
+## 2. 数据可视化  
 主要使用了arcgis 的 JavaScript SDK，以color ramp和可点击查看的tooltips展示欠款数据。
 # 项目查看
 https://shimengzhao.github.io/who_is_laolai_arcgis/
