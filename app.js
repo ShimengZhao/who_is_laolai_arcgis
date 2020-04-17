@@ -30,7 +30,7 @@ require([
   var who_country_layer = new FeatureLayer(
     "https://services9.arcgis.com/DYJ7DbkMVmIBPMdR/arcgis/rest/services/country_owing_WHO/FeatureServer/0",{
       outFields: ["*"],
-      infoTemplate: new InfoTemplate("${COUNTRY}", "<div style='font: 18px Segoe UI'><b>Total:</b> ${TOTAL_OWING:NumberFormat(places:0)} USD <br> <b>2020-2011:</b> ${P_2020_2021_OWING:NumberFormat(places:0)} USD <br> <b>2018-2019:</b> ${P_2018_2019_OWING:NumberFormat(places:0)} USD <br> <b>Prior 2018:</b> ${PRIOR_2018_OWING:NumberFormat(places:0)} USD</div>")
+      infoTemplate: new InfoTemplate("${COUNTRY}", "<div style='font: 18px Segoe UI'><b>Total:</b> ${TOTAL_OWING:NumberFormat(places:0)} USD <br> <b>2020-2021:</b> ${P_2020_2021_OWING:NumberFormat(places:0)} USD <br> <b>2018-2019:</b> ${P_2018_2019_OWING:NumberFormat(places:0)} USD <br> <b>Prior 2018:</b> ${PRIOR_2018_OWING:NumberFormat(places:0)} USD</div>")
         });
 
   var legend = new Legend({
