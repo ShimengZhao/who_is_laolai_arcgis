@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/css/esri.css">
-    <title>How Much the Countries are Owing WHO?</title>
-    <style>
-      html, body, #map {
-        height: 100%;
-        margin: 0;
-      }
-      #info {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        padding: 10px;
-        background-color: #ddd;
-        font: 14px Segoe UI;
-        width: 200px;
-        text-align: center;
-        border-radius: 0 10px 0 0;
-      }
-    </style>
-    <script src="https://js.arcgis.com/3.32/"></script>
-    <script src="app.js"></script>
-  </head>
-  <body>
-    <div id="map"></div>
-    <div id="info"><div id="legend"></div></div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/css/esri.css">
+  <title>How Much the Countries are Owing WHO?</title>
+  <style>
+    html,
+    body,
+    #map {
+      height: 100%;
+      margin: 0;
+    }
+
+    #info {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 10px;
+      background-color: #ddd;
+      font: 14px Segoe UI;
+      width: 200px;
+      text-align: center;
+      border-radius: 0 10px 0 0;
+    }
+  </style>
+  <script src="https://js.arcgis.com/3.32/"></script>
+</head>
+
+<body>
+  <div id="map"></div>
+  <div id="info">
+    <div id="legend"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
 </html>
